@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 800px;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wholeBoard {
+    width: 95%;
+    margin: 50px auto;
+}
+
+.controlBtns {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.control {
+    margin: 0 10px;
+}
+
+.title {
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.control {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid darkgrey;
+    background-color: lightsalmon;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+#rainbow:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+#reset:hover {
+    background-color: orangered;
+}
+
+#classic:hover {
+    background-color: grey;
+}
+
+button:focus {
+    outline: none;
+}
+
+.control:active {
+    transform: translateY(4px);
+    background-color: darkred;
+}
+
+.redBoard {
+    background-color: red;
+    width: 850px;
+    height: 850px;
+    margin: 20px auto;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 60px;
+}
+
+.container {
+    display: grid;
+    background-color: white;
+    width: 700px;
+    height: 700px;
+    margin: 20px auto;
+    /*grid-template: auto auto auto / auto auto auto;*/
+}
+
+.container div {
+    border: 1px solid black;
+}
+
+.paintGrey {
+    background-color: grey;
+}
