@@ -11,15 +11,18 @@ body {
 
 .intro {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .wholeBoard {
     width: 95%;
-    margin: 50px auto;
+    margin: 0px auto;
+
 }
 
 .controlBtns {
+    position: relative;
+    top: -75px;
     margin: 0 auto;
     width: 50%;
     display: flex;
@@ -44,7 +47,6 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
-
 
 #rainbow:hover {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
