@@ -11,13 +11,11 @@ function fillGridGrey(e) {
 
     if (!e.isTrusted) return;
 
-    console.log(this);
     this.style.backgroundColor = "grey";
 }
 
 function fillGridRainbow(e) {
     if (!e.isTrusted) return;
-    console.log(this);
 
     const redVal = Math.floor(Math.random() * 256);
     const grnVal = Math.floor(Math.random() * 256);
@@ -63,9 +61,8 @@ function reset() {
     appendDivs(container, size, size);
 }
 
-function rainbowTurnOn(e) {
+function rainbowTurnOn() {
     const containerDivs = document.querySelector('.container').childNodes;
-    console.log(containerDivs);
 
     containerDivs.forEach(div => {
         div.removeEventListener('mouseenter', fillGridGrey);
@@ -73,10 +70,9 @@ function rainbowTurnOn(e) {
     })
 }
 
-function rainbowTurnOff(e) {
+function rainbowTurnOff() {
 
     const containerDivs = document.querySelector('.container').childNodes;
-    console.log(containerDivs);
     containerDivs.forEach(div => {
         div.removeEventListener('mouseenter', fillGridRainbow);
         div.addEventListener('mouseenter', fillGridGrey);
@@ -91,6 +87,7 @@ rainbowBtn.addEventListener('click', rainbowTurnOn);
 
 const classicBtn = document.getElementById('classic');
 classicBtn.addEventListener('click', rainbowTurnOff);
+
 
 makeInitialGrid();
 
