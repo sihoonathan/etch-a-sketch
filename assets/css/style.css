@@ -6,6 +6,7 @@
 
 body {
     min-width: 800px;
+    background-color: #FFD5A3;
 }
 
 .intro {
@@ -85,10 +86,7 @@ button:focus {
     /*grid-template: auto auto auto / auto auto auto;*/
 }
 
-.container div {
+.addBorder {
     border: 1px solid black;
 }
 
-.paintGrey {
-    background-color: grey;
-}
