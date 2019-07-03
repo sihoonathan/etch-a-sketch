@@ -5,3 +5,4 @@
 
 - Provides classic grey color to draw
 - Also provides a random color options to draw
+- Able to customize the pixel size of the board with reset button
